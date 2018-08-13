@@ -24,7 +24,7 @@ url                      : "https://www.hen.ai/blog" # the base hostname & proto
 baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
 production_url           : http://codechair.github.io/blog
 relative_url             : http://codechair.github.io/blog
-repository               : "codechair/codechair/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "codechair/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : /assets/images/interface.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
