@@ -3,10 +3,10 @@ main:
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Home"
-     url: /codechair/codechair.github.io/
+     url: codechair.github.io
   - title: "Blog"
-     url: /codechair/blog/
+     url: /
   # title: "Join Newsletter"
   #   url: /collection-archive/
   - title: "Contact"
-     url: /codechair/codechair.github.io/contact/
+     url: codechair.github.io/contact
