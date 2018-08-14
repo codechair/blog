@@ -221,11 +221,7 @@ body:hover .visually-hidden button {
   .fa-github,
   .fa-github-alt,
   .fa-github-square {
-    color: $github-color;
-  }
-
-  .fa-gitlab {
-    color: $gitlab-color;
+    color: #262626;
   }
 
   .fa-google-plus,
@@ -245,7 +241,7 @@ body:hover .visually-hidden button {
 
   .fa-linkedin,
   .fa-linkedin-in {
-    color: $linkedin-color;
+    color: #262626;
   }
 
   .fa-pinterest,
@@ -275,7 +271,7 @@ body:hover .visually-hidden button {
 
   .fa-twitter,
   .fa-twitter-square {
-    color: $twitter-color;
+    color: #262626;
   }
 
   .fa-vimeo,
@@ -296,6 +292,10 @@ body:hover .visually-hidden button {
   .fa-xing-square {
     color: $xing-color;
   }
+
+  .fa-medium {
+    color: #262626;
+  }
 }
 
 /*
@@ -306,7 +306,7 @@ body:hover .visually-hidden button {
   position: relative;
   width: $navicon-width;
   height: $navicon-height;
-  background: #fff;
+  background: $primary-color;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -318,7 +318,7 @@ body:hover .visually-hidden button {
     left: 0;
     width: $navicon-width;
     height: $navicon-height;
-    background: #fff;
+    background: $primary-color;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -522,3 +522,11 @@ a.reversefootnote {
     position: static;
   }
 }
+
+.byline-item {
+    white-space: nowrap;
+
+    &:not(:first-child) {
+       margin-left: 1.5rem;
+     }
+   }
