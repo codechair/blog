@@ -206,7 +206,7 @@
     border: 0;
     outline: none;
     color: #fff;
-    background-color: $primary-color;
+    background-color: transparent;
     cursor: pointer;
   }
 
@@ -274,6 +274,7 @@
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      text-align: center;
 
       &:hover {
         color: $masthead-link-color-hover;
