@@ -55,6 +55,24 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+
+  a {
+    color: inherit;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: initial;
+    text-decoration: none;
+    -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    transition: color 0.2s ease-out, border-bottom-color 0.2s ease-in-out;
+
+    &:hover {
+      text-decoration: none;
+      color: bolder;
+      border-bottom-color: transparent;
+    }
+  }
 }
 
 .page__footer-follow {
@@ -81,11 +99,5 @@
   a {
     padding-right: 10px;
     font-weight: bold;
-  }
-
-  .social-icons {
-    a {
-      white-space: nowrap;
-    }
   }
 }
