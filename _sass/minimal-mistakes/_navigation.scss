@@ -198,8 +198,9 @@
        }
 
        &__toggle {
+         align-self: center;
+         height: $nav-toggle-height;
          padding: 0 0.5rem;
-         align-self: stretch;
          border: 0;
          outline: none;
          color: #fff;
