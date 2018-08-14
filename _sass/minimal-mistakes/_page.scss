@@ -150,6 +150,10 @@
       color: #fff;
     }
 
+    a:hover {
+      text-decoration: underline;
+    }
+
     .wrapper {
       padding-left: 1em;
       padding-right: 1em;
@@ -209,6 +213,11 @@
   a {
     color: #fff;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: $link-color-hover;
+    }
   }
 }
 
@@ -257,7 +266,26 @@
 
   a {
     color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
+
+  .byline-item {
+    white-space: nowrap;
+
+    &:not(:first-child) {
+      margin-left: 1.5rem;
+    }
+  }
+
+
+  //  .icon {
+  //    margin-right: 0.5em;
+  //    fill: $accent-color;
+  //  }
 }
 
 .page__meta-title {
