@@ -18,12 +18,11 @@
     padding: 1em;
     max-width: 100%;
     display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     font-family: $sans-serif-narrow;
+    font-size: 0.75rem;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -41,13 +40,15 @@
 
 .site-title {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
+  padding: 0.5rem 0;
+  align-self: stretch;
+  -webkit-box-align: center;
+  align-items: center;
   font-weight: bold;
   z-index: 20;
-}
+  font-size: 1.65rem;
+  }
 
 .masthead__menu {
   float: left;
