@@ -173,60 +173,53 @@
      Priority plus navigation
      ========================================================================== */
 
-.greedy-nav {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-height: $nav-height;
-  background: $background-color;
+     .greedy-nav {
+       position: relative;
+       display: -webkit-box;
+       display: flex;
+       -webkit-box-align: center;
+       align-items: center;
+       background: $background-color;
 
-  a {
-    display: block;
-    margin: 0 1rem;
-    color: $masthead-link-color;
-    text-decoration: none;
+       a {
+         display: block;
+         margin: 0 1rem;
+         padding: 0.5rem 0;
+         color: $masthead-link-color;
+         text-decoration: none;
 
-    &:hover {
-      color: $masthead-link-color-hover;
-    }
+         &:hover {
+           color: $masthead-link-color-hover;
+         }
 
-    &.site-title {
-      margin-left: 0;
-    }
-  }
+         &.site-title {
+           margin-left: 0;
+         }
+       }
 
-  &__toggle {
-    -ms-flex-item-align: center;
-    align-self: center;
-    height: $nav-toggle-height;
-    border: 0;
-    outline: none;
-    color: #fff;
-    background-color: $primary-color;
-    cursor: pointer;
-  }
+       &__toggle {
+         padding: 0 0.5rem;
+         align-self: stretch;
+         border: 0;
+         outline: none;
+         color: #fff;
+         background-color: transparent;
+         cursor: pointer;
+       }
 
-  .visible-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    overflow: hidden;
+       .visible-links {
+         display: -webkit-box;
+         display: flex;
+         -webkit-box-pack: end;
+         justify-content: flex-end;
+         -webkit-box-flex: 1;
+         flex: 1;
+         overflow: hidden;
 
-    li {
-      -webkit-box-flex: 0;
-      -ms-flex: none;
-      flex: none;
-    }
+         li {
+           -webkit-box-flex: 0;
+           flex: none;
+         }
 
     a {
       position: relative;
@@ -262,8 +255,6 @@
     border: 1px solid $border-color;
     border-radius: $border-radius;
     background: $background-color;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(#000, 0.16),
-      0 2px 10px 0 rgba(#000, 0.12);
     box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
 
     &.hidden {
@@ -274,6 +265,7 @@
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      text-align: center;
 
       &:hover {
         color: $masthead-link-color-hover;
@@ -500,10 +492,11 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   background-color: $background-color;
   border: 1px solid $border-color;
   border-radius: $border-radius;
-  -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
 
   .nav__title {
@@ -520,18 +513,25 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-7;
+  font-size: 0.8rem;
 
   a {
     display: block;
     padding: 0.5rem 1rem;
     color: $muted-text-color;
+    font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
 
     &:hover {
       color: $text-color;
+    }
+  }
+
+  > li:last-child {
+    a {
+      border-bottom: none;
     }
   }
 
