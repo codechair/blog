@@ -25,7 +25,7 @@ baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
 production_url           : http://codechair.github.io/blog
 relative_url             : http://codechair.github.io/blog
 repository               : "codechair/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /assets/images/interface.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : /blog/assets/images/interface.jpg # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Hen"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/bio-photo.jpg # /assets/images/bio-photo.jpg i.e. path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Making running a business as easy as chatting."
   location         : "Earth"
   email            :
