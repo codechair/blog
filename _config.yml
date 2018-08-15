@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Hen"
-  avatar           : /assets/images/bio-photo.jpg # /assets/images/bio-photo.jpg i.e. path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : /assets/images/bio-photo.jpg # i.e. don't fill for no avatar or add path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Making running a business as easy as chatting."
   location         : "Earth"
   email            :
