@@ -31,8 +31,8 @@ layout: default
           {% if page.date %}
             <p class="page__meta" style="margin-top: 0">
               {% if page.read_time %}
-                <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-              {% endif %}
+              <span class="byline-item">
+              <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}{% endif %}
               {% if page.comments == true and site.data.comments[page.slug].size > 0 %}
               <span class="byline-item">
               <a href="#comments">
